@@ -36,12 +36,14 @@ Some of these tasks may involve gathering progress reports from members or answe
    - `. .venv/bin/activate`
 4. Then, install the following dependencies within the virtual environment(BASH/UNIX):
    - `.venv/bin/pip install -r requirements.txt`
-5. A file named `.env` must also be created in the root of the project directory with the following line inside:
-   - `token=YOUR_BOT_TOKEN`
-6. A `credentials.json` file must be obtained from your Google Cloud account and placed in `/cache/GoogleAPI/`.
-7. A `GoogleSheetID.yaml` file containing `SPREADSHEET_ID : "YOUR_SHEET_ID"` inside of `/config/`.
-8. Now, you can start the bot by running the `main.py` file with the Python interpreter:
-   - `.venv/bin/python main.py`
+5. Go to the [Discord Developer Portal](https://discord.com/developers/applications) and create a bot
+6. Select the OAuth2 category and under the OAuth2 URL Generator, select 'bot' and select 'administrator' in the menu that appears underneath.
+7. Copy the generated URL and paste it into a browser, and select a server to add the bot to.
+8. In the Bot category in the Discord Developer Portal, select Reset Token and copy the token
+9. Create a file named `.env` in the root of the project directory with the following line inside:
+   - `token=[COPIED_TOKEN]`
+10. Now, you can start the bot by running the `main.py` file with the Python interpreter:
+    - `.venv/bin/python main.py`
 
 ### GENERAL USAGE:
 The command prefix for this bot is `!`.  
